@@ -1,0 +1,16 @@
+{
+  "name": "fake-store-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fakeapi": "newman run collection/Fake_store_api_automation.postman_collection.json -e env/fakeStoreApi.postman_environment.json -r htmlextra --reporter-htmlextra-export reports/fake-store-report.html --reporter-htmlextra-title 'Fake Store API Automation'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
